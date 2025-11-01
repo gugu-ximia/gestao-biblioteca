@@ -3,7 +3,7 @@ import { criaUsuario } from "../controller/users-controller.js";
 
 const router = Router();
 
-router.post("/register", (req, res) => {
+router.post("/register", verifyAdmin, verifyUser, (req, res) => {
     criaUsuario(req, res)
 })
 

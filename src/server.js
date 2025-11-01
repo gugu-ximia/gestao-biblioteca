@@ -1,6 +1,6 @@
 import express from "express" // IMPORTANDO O EXPRESS
-import authRouter from "./routes/auth.js"
-import booksRouter from "./routes/books.js"
+import authRouter from "./routes/Auth.js"
+import booksRouter from "./routes/Books.js" 
 
 const app = express(); 
 app.use(express.json())
